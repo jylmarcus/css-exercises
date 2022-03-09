@@ -15,11 +15,19 @@ body {
   justify-content: center;
 }
 
+.header {
+  font-weight: bold;
+  font-size: larger;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 .icon {
@@ -33,6 +41,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.right{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
 }
 
 .close-button {
@@ -53,6 +69,11 @@ button {
   border-radius: 8px;
 }
 
+.buttons{
+  display: flex;
+  gap: 0.5em;
+}
+
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
@@ -64,3 +85,5 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/*given solution has the following boxes in modal box: icon, header + close button, text, bottom buttons */
